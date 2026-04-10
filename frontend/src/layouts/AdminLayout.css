@@ -1,0 +1,45 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f0f2f7;
+  position: relative;
+}
+
+.admin-body {
+  flex: 1;
+  margin-left: var(--sidebar-w);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: margin-left 0.3s var(--ease);
+}
+
+.admin-main {
+  flex: 1;
+  padding: var(--space-8);
+  animation: fadeIn 0.35s var(--ease) both;
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 14, 26, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 99;
+}
+
+@media (max-width: 1024px) {
+  .admin-body {
+    margin-left: 0;
+  }
+  .sidebar-overlay {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-main {
+    padding: var(--space-4);
+  }
+}

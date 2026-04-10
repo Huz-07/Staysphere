@@ -1,0 +1,112 @@
+/* user-detail modal */
+.user-detail {
+  text-align: center;
+  padding: var(--space-2) 0;
+}
+
+.user-detail__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-3);
+}
+
+.user-detail__name {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: var(--space-2);
+}
+
+.user-detail__rows {
+  text-align: left;
+  margin-top: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background: var(--surface);
+  border-radius: var(--r-lg);
+  padding: var(--space-4);
+}
+
+.user-detail__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.user-detail__row span { color: var(--text-muted); }
+.user-detail__row strong { color: var(--ink); font-weight: 600; }
+
+/* booking-detail modal */
+.booking-detail {}
+
+.bd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--border);
+}
+
+.bd-id {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.bd-room { font-size: 18px; font-weight: 800; color: var(--ink); }
+.bd-room-no { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+
+.bd-rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.bd-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border-radius: var(--r-md);
+  font-size: 14px;
+}
+
+.bd-row span:first-child { color: var(--text-muted); }
+.bd-row strong { color: var(--ink); font-weight: 600; }
+
+/* payment status */
+.at-booking-id {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.payment-status {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--r-full);
+  text-transform: capitalize;
+  font-family: var(--font-display);
+}
+
+.payment-status--paid     { background: #dcfce7; color: #15803d; }
+.payment-status--pending  { background: #fef9c3; color: #a16207; }
+.payment-status--refunded { background: #e0e7ff; color: #4338ca; }
